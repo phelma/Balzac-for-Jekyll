@@ -4,7 +4,7 @@ This is forked from [minimal mistakes](http://mademistakes.com). I needed some t
 
 
 If you'd like give me credit somewhere on your blog or tweet a shout out to
-[@twnsndco](https://twitter.com/twnsndco), that would be pretty sweet. 
+[@twnsndco](https://twitter.com/twnsndco), that would be pretty sweet.
 
 If you feel like donating — [Give it a thought.](http://gtat.me/balzac/donate)
 
@@ -33,7 +33,7 @@ If you feel like donating — [Give it a thought.](http://gtat.me/balzac/donate)
 ## [Preview the Theme](http://jekyll.gtat.me)
 =======
  [Preview the Theme](http://jekyll.gtat.me)
- 
+
 ``` bash
 balzac-for-jekyll/
 ├── _includes
@@ -53,7 +53,7 @@ balzac-for-jekyll/
 |    ├── js
 |    |   ├── main.js  //jQuery plugins and settings
 |    |   └── vendor  //all 3rd party scripts
-|    └── sass 
+|    └── sass
 ├── images  //images for posts and pages
 ├── about.md  //about page
 ├── articles.md  //lists all posts from latest to oldest
@@ -64,7 +64,7 @@ balzac-for-jekyll/
 
 ## _config.yml
 
-Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. When working locally comment out `url` or else you will get a bunch of broken links because they are absolute and prefixed with `{{ site.url }}` in the various `_includes` and `_layouts`. Just remember to uncomment `url` when building for deployment or pushing to **gh-pages**...
+Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. When working locally comment out `url` or else you will get a bunch of broken links because they are absolute and prefixed with `{{ site.baseurl }}` in the various `_includes` and `_layouts`. Just remember to uncomment `url` when building for deployment or pushing to **gh-pages**...
 
 ### Owner/Author Information
 
@@ -97,15 +97,15 @@ For the most part you can leave these as is since the author/owner details are p
 
 ### Adding Posts and Pages
 
-There are two main content layouts: `post.html` (for posts) and `page.html` (for pages). Both have large **feature images** that span the full-width of the screen, and both are meant for text heavy blog posts (or articles). 
+There are two main content layouts: `post.html` (for posts) and `page.html` (for pages). Both have large **feature images** that span the full-width of the screen, and both are meant for text heavy blog posts (or articles).
 
 ### Feature Images
 
-A good rule of thumb is to keep feature images nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. 
+A good rule of thumb is to keep feature images nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices.
 
 ``` yaml
 image:
-# local image 
+# local image
   feature: feature-image-filename.jpg
 # link image
   feature: "http(s)://image.domain.com/feature-image-filename.jpg"
@@ -114,7 +114,7 @@ image:
 This makes the assumption that the feature image is in the *images* folder unless it has a link address. To add a feature image to a post or page just include the filename in the front matter like so.
 You can "serve" images responsively with retina.js. All you need to do is have a file with @2x before the file type. That should be placed in the *images* folder. You literally don't have to do anything other than that. 2 copies. One is linked. That's it.
 Ex:
-`cool-photo@2x.jpg` 
+`cool-photo@2x.jpg`
 
 **There is a default feature image that will show up for and posts. It isn't retina or anything. It's just there in case you want one but forget <3*
 
@@ -135,4 +135,4 @@ If done correctly `/blog` should be a page listing all the site's posts.
 
 ## License
 
-This is free to use, fork, do whatever you want. Please *do not* sell this design though. You don't need to link me to it, but please contact me if you intend to market this theme. I am releasing premium versions of this design for select CMS's. 
+This is free to use, fork, do whatever you want. Please *do not* sell this design though. You don't need to link me to it, but please contact me if you intend to market this theme. I am releasing premium versions of this design for select CMS's.

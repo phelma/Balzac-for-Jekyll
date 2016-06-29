@@ -2,6 +2,7 @@ title:            Balzac
 tagline:          A beautiful theme.
 description:      Describe your website.
 canonical: https://phelma.github.io/Balzac-for-Jekyll
+baseurl: /Balzac-for-Jekyll
 
 # Owner/author information
 owner:
